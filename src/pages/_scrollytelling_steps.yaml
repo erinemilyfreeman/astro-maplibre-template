@@ -25,7 +25,7 @@
     layer-type: 'circle'
     persist: true
     paint:
-      circle-radius: 5
+      circle-radius: 2
       circle-color: '#826260'
       circle-opacity: 0.8
 
