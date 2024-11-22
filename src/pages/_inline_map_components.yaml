@@ -2,96 +2,111 @@ blocks:
   - type: "content"
     content:
       - h1:
-        - str: "Example page with inline maps from a yaml file"
+        - str: "“Swiss cheese” and electoral maps: voting in the state of Wisconsin"
       - p: 
-        - str: "An example of an interactive map"
+        - str: "Pan around the state of Wisconsin to see how the State Assembly Districts have changed from 2002 to 2024"
 
   - type: "map"
     content:
       container: "maplibremap"
-      latitude: 40.8075803
-      longitude: -73.9604192
-      zoom: 12
+      latitude: 43
+      longitude: -89
+      zoom: 8
       interactive: true
       mapstyle: "https://api.maptiler.com/maps/dataviz/style.json?key=WlatIY6MghFCwInJhBkl"
-      containerstyle: "width: 100%; height: 70vh"
+      containerstyle: "width: 100%; height: 65vh"
       layers:
-        - id: "pizza"
-          url: "https://data.cityofnewyork.us/resource/43nn-pn8j.geojson?cuisine_description=Pizza&$limit=10000"
-          data-type: "geojson"
-          layer-type: "circle"
-          paint:
-            circle-color: "#ff0000"
-            circle-radius: 5
-          mouseEvent:
-            - type: "click"
-              content:
-                - h2:
-                  - str: "Feature Info"
-                - p:
-                  - str: "Description of feature"
-                - p:
-                  - str: "NTA Attribute: "
-                  - property: "dba"
-                    else: "N/A"
-                  - str: " in CD "
-                  - property: "nta"
-                    else: "N/A"
-                - a:
-                  - href: "https://example.com"
-                    text: "Learn more about this feature"
-                - img:
-                  - src: "https://www.seriouseats.com/thmb/-_mziT2tl0F63I4kfji4S6bE-cA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2018__10__20181015-state-of-slice-delmar-clay-williams-2de043fa5a0d4475b6c567e4a974b13b.jpg"
-                    alt: "Feature image"
-          toggle: true
-          visible: true
-        - id: "bikes"
-          url: "https://data.cityofnewyork.us/resource/mzxg-pwib.geojson?$limit=10000"
+        - id: "2002"
+          url: "./data/WI_Assembly_Districts_2002.geojson"
           data-type: "geojson"
           layer-type: "line"
           paint:
-            line-color: "#000000"
-            line-width: 3
+            line-color: "#6a92c4"
+            line-width: 0.5
+          ##mouseEvent:
+            ##- type: "click"
+              ##content:
+               ##- h2:
+                  ##- str: "Feature Info"
+                ##- p:
+                  ##- str: "Description of feature"
+                ##- p:
+                  ##- str: "NTA Attribute: "
+                  ##- property: "dba"
+                    ##else: "N/A"
+                  ##- str: " in CD "
+                  ##- property: "nta"
+                    ##else: "N/A"
+                ##- a:
+                  ##- href: "https://example.com"
+                    ##text: "Learn more about this feature"
+                ##- img:
+                  ##- src: "https://www.seriouseats.com/thmb/-_mziT2tl0F63I4kfji4S6bE-cA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__2018__10__20181015-state-of-slice-delmar-clay-williams-2de043fa5a0d4475b6c567e4a974b13b.jpg"
+                    ##alt: "Feature image"
           toggle: true
-          visible: false
+          visible: true
+        - id: "2012"
+          url: "./data/WI_Assembly_Districts_2012.geojson"
+          data-type: "geojson"
+          layer-type: "line"
+          paint:
+            line-color: "#4a82c7"
+            line-width: 1
+          toggle: true
+          visible: true
+        - id: "2022"
+          url: "./data/WI_Assembly_Districts_2022.geojson"
+          data-type: "geojson"
+          layer-type: "line"
+          paint:
+            line-color: "#2670c9"
+            line-width: 1.5
+          toggle: true
+          visible: true
+        - id: "2024"
+          url: "./data/WI_Assembly_Districts_2024.geojson"
+          data-type: "geojson"
+          layer-type: "line"
+          paint:
+            line-color: "#025fd1"
+            line-width: 2
+          toggle: true
+          visible: true
 
   - type: "content"
     content:
       - p: 
-        - str: "... and below is a static map. Note that the container ID must be unique (in the example below it is maplibremap2)."
-
-  - type: "map"
-    content:
-      container: "maplibremap2"
-      latitude: 32.795595
-      longitude: -117.259191
-      zoom: 3
-      interactive: false
-      mapstyle: "https://demotiles.maplibre.org/style.json"
-      containerstyle: "width: 100%; height: 256px"
-
-  - type: "content"
-    content:
-      - p: 
-        - str: "... and a static map from an image you have composed." 
-      - p: 
-        - str: "To add static images from a jpg or png file save the image in the public/img folder and use the syntax below"
+        - str: "2002, 2012, 2022, and 2024 Wisconsin Assembly Districts and 2020 Presidential Election Results with Wards"
       - img:
-        - src: "./img/fisk02.jpg"
+        - src: "./img/Assignment01Map06.jpg"
+          alt: "image description"
+
+  - type: "content"
+    content:
+      - p: 
+        - str: "2024 absentee voting locations in the City of Madison" 
+      - img:
+        - src: "./img/Assignment02.jpg"
+          alt: "image description"
+
+  - type: "content"
+    content:
+      - p: 
+        - str: "2024 Dane County Land Use, 2024 Assembly Districts, and 2024 Wards" 
+      - img:
+        - src: "./img/AssemblyDistricts543LandUse.jpg"
           alt: "image description"
 
   - type: "content"
     content:
       - h2: 
-        - str: "A subsection"
+        - str: "Dane County"
       - p: 
-        - str: "You can go into more detail here."
-      - p: 
-        - str: "To start a new paragraph you must insert a new p section as shown here. "
+        - str: "In the 2024 Presidential Election, Kamala Harris won Dane County with 75.1%."
 
   - type: "content"
     content:
       - h3: 
-        - str: "A further subsection"
+        - str: "Sauk County"
       - p: 
-        - str: "And even more detail here."
+        - str: "In the 2024 Presidential Election, Donald Trump won Sauk County with 50%."
