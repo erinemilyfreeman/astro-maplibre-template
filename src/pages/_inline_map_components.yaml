@@ -110,3 +110,7 @@ blocks:
         - str: "Sauk County"
       - p: 
         - str: "In the 2024 Presidential Election, Donald Trump won Sauk County with 50%."
+
+        ##adding css classes to add flex columns in global.css
+        ##union and then if id 2016 does not equal id 2020 or 2024 then difference 
+        ##padding-top for the types of headers and padding-bottom for

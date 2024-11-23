@@ -103,7 +103,8 @@ h1 {
 }
 
 h2 {
-	font-size: 1.75em;
+	padding-top: 50px;
+  font-size: 1.75em;
 	font-weight: 500;
 }
 
