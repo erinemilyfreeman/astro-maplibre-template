@@ -92,7 +92,7 @@ blocks:
       - h5:
         - str: ""
       - img:
-        - src: "./img/WI_Assembly_Districts_2002_2024.png"
+        - src: "/astro-maplibre-template/WI_Assembly_Districts_2002_2024.png"
           alt: "image description"
           url: "https://raw.githubusercontent.com/erinemilyfreeman/astro-maplibre-template/refs/heads/main/public/img/WI_Assembly_Districts_2002_2024.png"
 
