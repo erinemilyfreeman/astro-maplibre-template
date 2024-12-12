@@ -4,7 +4,7 @@
 
 /* Base styles */
 :root {
-  --bg-color: rgba(255, 255, 255, 0.9); /* Light mode */
+  --bg-color: rgb(255, 255, 255); /* Light mode */
   --text-color: #333; /* Darker text for light mode */
 }
 
@@ -33,14 +33,16 @@ body {
 body {
   @apply font-sans antialiased;
   @apply flex flex-col;
-  @apply bg-stone-100 dark:bg-stone-900;
-  @apply text-black/50 dark:text-white/75;
+  @apply bg-white dark:bg-stone-900;
+  @apply text-black/100 dark:text-white/75;
+  font-family: 'Roboto Mono';
+  font-weight: bold;
 }
 
 header {
   @apply fixed top-0 left-0 right-0 z-50 py-5;
-  @apply bg-stone-100/75 dark:bg-stone-900/25;
-  @apply backdrop-blur-sm saturate-200;
+  @apply bg-white dark:bg-stone-900/25;
+  @apply text-white;
 }
 
 main {
@@ -94,7 +96,7 @@ h5 {
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 	line-height: initial;
-	font-family: "Inter", normal;
+	font-family: "Roboto Mono"
 }
 
 h1 {
@@ -104,17 +106,17 @@ h1 {
 
 h2 {
 	font-size: 1.75em;
-	font-weight: 500;
+	font-weight: 700;
 }
 
 h3 {
 	font-size: 1.5em;
-	font-weight: 400;
+	font-weight: 700;
 }
 
 h4 {
 	/* font-size: 1.5em; */
-	font-weight: bold;
+	font-weight: 700;
 }
 
 h5 {
@@ -231,7 +233,7 @@ section {
 }
 
 .menu a {
-  font-size: 13px;
+  font-size: 12px;
   color: #404040;
   display: block;
   margin: 0;

@@ -1,9 +1,9 @@
 import type { Metadata, Site, Socials } from "@types";
 
 export const SITE: Site = {
-  NAME: "Project Website",
-  EMAIL: "<your email address here>",
-  DESCRIPTION: "<A description of your website>",
+  NAME: "",
+  EMAIL: "",
+  DESCRIPTION: "",
 };
 
 export const HOME: Metadata = {

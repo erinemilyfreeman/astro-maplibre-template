@@ -4,16 +4,26 @@ blocks:
       - h1:
         - str: "“Swiss cheese” and electoral maps: voting in the state of Wisconsin"
       - p: 
-        - str: "Pan around the state of Wisconsin to see how the State Assembly Districts have changed from 2002 to 2024"
+        - str: This final project and narrative atlas is a story about voting, electoral maps, gerrymandering, and civil rights in the state of Wisconsin.
+      - h5:
+        - str: ""
+      - p: 
+        - str: This atlas begins as a response to the redistricting in the state of Wisconsin in February 2024.  Prior to February 2024, Wisconsin had curiously drawn districts and other oddities associated with the state’s extreme gerrymandering.  A state Supreme Court decision forced Wisconsin Republicans to cede an advantage they had for more than a decade.  Thus, these oddities were erased in new voting maps passed by the Wisconsin Legislature.  On February 19, 2024, Wisconsin Governor Tony Evers signed the redistricting legislation into law stating that, “Wisconsin is not a red state; it is not a blue state; Wisconsin is a purple state.”
+      - h5:
+        - str: ""
+      - p: 
+        - str: "Pan around the state of Wisconsin below to see how the State Assembly Districts have changed from 2002 to 2024."
+      - h5:
+        - str: ""
 
   - type: "map"
     content:
       container: "maplibremap"
-      latitude: 43
-      longitude: -89
-      zoom: 8
+      latitude: 43.15
+      longitude: -89.5
+      zoom: 7.5
       interactive: true
-      mapstyle: "https://api.maptiler.com/maps/dataviz/style.json?key=WlatIY6MghFCwInJhBkl"
+      mapstyle: "https://api.maptiler.com/maps/c4b7fc8b-0f59-4e21-a008-5e423bd97861/style.json?key=MRVkBdhGYsxXQhwo9Xq7"
       containerstyle: "width: 100%; height: 65vh"
       layers:
         - id: "2002"
@@ -21,7 +31,7 @@ blocks:
           data-type: "geojson"
           layer-type: "line"
           paint:
-            line-color: "#6a92c4"
+            line-color: "#788aff"
             line-width: 0.5
           ##mouseEvent:
             ##- type: "click"
@@ -50,7 +60,7 @@ blocks:
           data-type: "geojson"
           layer-type: "line"
           paint:
-            line-color: "#4a82c7"
+            line-color: "#586eff"
             line-width: 1
           toggle: true
           visible: true
@@ -59,7 +69,7 @@ blocks:
           data-type: "geojson"
           layer-type: "line"
           paint:
-            line-color: "#2670c9"
+            line-color: "#324dff"
             line-width: 1.5
           toggle: true
           visible: true
@@ -68,48 +78,89 @@ blocks:
           data-type: "geojson"
           layer-type: "line"
           paint:
-            line-color: "#025fd1"
+            line-color: "#1e3cff"
             line-width: 2
           toggle: true
           visible: true
 
   - type: "content"
     content:
+      - h5:
+        - str: ""
       - p: 
-        - str: "2002, 2012, 2022, and 2024 Wisconsin Assembly Districts and 2020 Presidential Election Results with Wards"
+        - str: "The differences between the 2002, 2012, 2022, and 2024 Wisconsin Assembly Districts highlight the packing and cracking of districts as evidence of gerrymandering.  Packing and cracking is particularly clear in the larger metropolitan areas including Madison and Milwaukee.  To further investigate, this atlas zooms in to Dane County, where Madison, the capital of the state, is located."
+      - h5:
+        - str: ""
       - img:
-        - src: "./img/Assignment01Map06.jpg"
+        - src: "./img/WI_Assembly_Districts_2002_2024.png"
           alt: "image description"
 
   - type: "content"
     content:
+      - h5:
+        - str: ""
       - p: 
-        - str: "2024 absentee voting locations in the City of Madison" 
+        - str: "This atlas was produced within the context of the 2024 United States presidential election.  Wisconsin remained one of the swing states that would determine the presidential election in 2024.  Thus, the importance of electoral maps in the state could not be more relevant." 
+      - h5:
+        - str: ""
+      - p: 
+        - str: "Given the results of the 2024 presidential election, this atlas looks at each ward in Dane County and the presidential election results in 2016, 2020, and 2024 (from left to right below).  Due to the recent timing of the 2024 presidential election, the election data is not entirely geocoordinated yet." 
+      - h5:
+        - str: ""
       - img:
-        - src: "./img/Assignment02.jpg"
+        - src: "./img/dane-2016-2024.png"
           alt: "image description"
-
+  
   - type: "content"
     content:
+      - h5:
+        - str: ""
       - p: 
-        - str: "2024 Dane County Land Use, 2024 Assembly Districts, and 2024 Wards" 
+        - str: "This atlas includes addendum studies of Dane County and the City of Madison.  The first addendum study investigates the land use of Dane County in relation to 2024 assembly districts (bold blue linework) and 2024 municipal wards (thin blue linework)." 
+      - h5:
+        - str: ""
       - img:
-        - src: "./img/AssemblyDistricts543LandUse.jpg"
+        - src: "./img/dane-county-land-use.png"
           alt: "image description"
+  
+  - type: "content"
+    content:
+      - h5:
+        - str: ""
+      - p: 
+        - str: "The second addendum study investigates the 2024 absentee voting locations in the City of Madison." 
+      - h5:
+        - str: ""
+      - img:
+        - src: "./img/city-of-madison-absentee-voting.png"
+          alt: "image description"
+  
+  - type: "content"
+    content:
+      - h5:
+        - str: ""
+      - footer: 
+        - str: "Thank you to professors Dare Brawley and Mario Giampieri." 
+      - h5:
+        - str: ""
 
   - type: "content"
     content:
-      - h2: 
-        - str: "Dane County"
+      - h5: 
+        - str: ""
       - p: 
-        - str: "In the 2024 Presidential Election, Kamala Harris won Dane County with 75.1%."
+        - str: "References"
+      - h5:
+        - str: ""
+      - footer: 
+        - str: "https://www.wicourts.gov/courts/supreme/origact/docs/expertrepmoonduchin.pdf"
+      - footer: 
+        - str: "https://gis-ltsb.hub.arcgis.com/datasets/7139bf85defd43b89387c0ae6fc59133/explore?location=44.645191%2C-87.409974%2C6.98"
+      - footer: 
+        - str: "https://gis-ltsb.hub.arcgis.com/datasets/55e24ed7087e4d0492381713d770eafb/explore?location=44.549349%2C-87.215196%2C6.97"
+      - footer: 
+        - str: "https://geodata.wisc.edu/catalog/317F4F49-5B17-43CC-9BCA-36ED25DC9E15"
 
-  - type: "content"
-    content:
-      - h3: 
-        - str: "Sauk County"
-      - p: 
-        - str: "In the 2024 Presidential Election, Donald Trump won Sauk County with 50%."
 
         ##adding css classes to add flex columns in global.css
         ##union and then if id 2016 does not equal id 2020 or 2024 then difference 
