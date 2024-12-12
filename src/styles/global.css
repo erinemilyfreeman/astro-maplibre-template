@@ -6,6 +6,7 @@
 :root {
   --bg-color: rgb(255, 255, 255); /* Light mode */
   --text-color: #333; /* Darker text for light mode */
+  font-family: 'Roboto Mono';
 }
 
 /* Dark mode */
@@ -13,6 +14,7 @@
   :root {
     --bg-color: rgba(40, 40, 40, 0.9); /* Dark background */
     --text-color: #eee; /* Lighter text for dark mode */
+    font-family: 'Roboto Mono';
   }
 }
 
@@ -102,26 +104,31 @@ h5 {
 h1 {
 	font-size: 2em;
 	font-weight: 700;
+  font-family: 'Roboto Mono';
 }
 
 h2 {
 	font-size: 1.75em;
 	font-weight: 700;
+  font-family: 'Roboto Mono';
 }
 
 h3 {
 	font-size: 1.5em;
 	font-weight: 700;
+  font-family: 'Roboto Mono';
 }
 
 h4 {
 	/* font-size: 1.5em; */
 	font-weight: 700;
+  font-family: 'Roboto Mono';
 }
 
 h5 {
 	/* font-size: 1.5em; */
 	font-weight: 700;
+  font-family: 'Roboto Mono';
 }
 
 .maplibre-inline {
