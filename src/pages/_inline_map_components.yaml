@@ -94,7 +94,7 @@ blocks:
       - img:
         - src: "/astro-maplibre-template/public/img/WI_Assembly_Districts_2002_2024.png"
           alt: "image description"
-          url: "https://github.com/erinemilyfreeman/astro-maplibre-template/blob/main/public/img/WI_Assembly_Districts_2002_2024.png"
+          url: "public/img/WI_Assembly_Districts_2002_2024.png"
 
   - type: "content"
     content:
