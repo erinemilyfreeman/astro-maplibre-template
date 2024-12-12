@@ -92,7 +92,7 @@ blocks:
       - h5:
         - str: ""
       - img:
-        - src: "/public/img/WI_Assembly_Districts_2012_2024.png"
+        - src: "/public/img/WI_Assembly_Districts_2002_2024.png"
           alt: "image description"
 
   - type: "content"
