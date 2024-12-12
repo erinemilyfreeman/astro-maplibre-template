@@ -110,7 +110,28 @@ blocks:
       - img:
         - src: "/astro-maplibre-template/public/img/dane-2016-2024.png"
           alt: "image description"
-  
+      - h5:
+        - str: ""
+      - img:
+        - src: "/astro-maplibre-template/public/img/dane-2016.png"
+          alt: "image description"
+      - h5:
+        - str: ""
+      - img:
+        - src: "/astro-maplibre-template/public/img/dane-2020.png"
+          alt: "image description"
+      - h5:
+        - str: ""
+      - img:
+        - src: "/astro-maplibre-template/public/img/dane-2024.png"
+          alt: "image description"
+      - h5:
+        - str: ""
+      - p: 
+        - str: "In 2016, three wards voted for Trump and the rest voted for Clinton.  In 2020, six wards voted for Trump and the rest voted for Biden.  In 2024, fifteen wards voted for Trump and the rest voted for Harris.  Even though Dane County is one of the most Democratic counties in the state of Wisconsin, there has been an increase in the number of wards who have voted for Trump in each of the past three presidential elections when Trump has been on the ballot."
+      - h3: 
+        - str: "Addendum Studies: Dane County and the City of Madison"
+      
   - type: "content"
     content:
       - h5:
