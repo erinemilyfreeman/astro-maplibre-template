@@ -10,7 +10,7 @@
 }
 
 /* Dark mode */
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --bg-color: rgba(40, 40, 40, 0.9); /* Dark background */
     --text-color: #eee; /* Lighter text for dark mode */
@@ -35,14 +35,14 @@ body {
 body {
   @apply font-sans antialiased;
   @apply flex flex-col;
-  @apply bg-white dark:bg-stone-900;
-  @apply text-black/100 dark:text-white/75;
+  @apply bg-white dark:bg-white;
+  @apply text-black/100 dark:text-black/100;
   font-family: 'Courier', normal;
 }
 
 header {
   @apply fixed top-0 left-0 right-0 z-50 py-5;
-  @apply bg-white dark:bg-stone-900/25;
+  @apply bg-white dark:bg-white;
   @apply text-white;
 }
 
