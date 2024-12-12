@@ -6,7 +6,7 @@
 :root {
   --bg-color: rgb(255, 255, 255); /* Light mode */
   --text-color: #333; /* Darker text for light mode */
-  font-family: 'Courier', normal;
+  font-family: 'Roboto Mono', normal;
 }
 
 /* Dark mode */
@@ -14,7 +14,7 @@
   :root {
     --bg-color: rgba(40, 40, 40, 0.9); /* Dark background */
     --text-color: #eee; /* Lighter text for dark mode */
-    font-family: 'Courier', normal;
+    font-family: 'Roboto Mono', normal;
   }
 }
 
@@ -37,7 +37,7 @@ body {
   @apply flex flex-col;
   @apply bg-white dark:bg-stone-900;
   @apply text-black/100 dark:text-white/75;
-  font-family: 'Courier', normal;
+  font-family: 'Roboto Mono', normal;
 }
 
 header {
@@ -97,37 +97,37 @@ h5 {
 	margin-top: 1.5em;
 	margin-bottom: 1.5em;
 	line-height: initial;
-	font-family: 'Courier', normal;
+	font-family: 'Roboto Mono', normal;
 }
 
 h1 {
 	font-size: 2em;
 	font-weight: 700;
-  font-family: 'Courier', normal;
+  font-family: 'Roboto Mono', normal;
 }
 
 h2 {
 	font-size: 1.75em;
 	font-weight: 700;
-  font-family: 'Courier', normal;
+  font-family: 'Roboto Mono', normal;
 }
 
 h3 {
 	font-size: 1.5em;
 	font-weight: 700;
-  font-family: 'Courier', normal;
+  font-family: 'Roboto Mono', normal;
 }
 
 h4 {
 	/* font-size: 1.5em; */
 	font-weight: 700;
-  font-family: 'Courier', normal;
+  font-family: 'Roboto Mono', normal;
 }
 
 h5 {
 	/* font-size: 1.5em; */
 	font-weight: 700;
-  font-family: 'Courier', normal;
+  font-family: 'Roboto Mono', normal;
 }
 
 .maplibre-inline {
