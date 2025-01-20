@@ -172,7 +172,7 @@ blocks:
       - h5:
         - str: ""
       - img:
-        - src: "../astro-maplibre-template/img/dane-2016-2024.png"
+        - src: "../img/dane-2016-2024.png"
           alt: "image description"
       - h5:
         - str: ""
