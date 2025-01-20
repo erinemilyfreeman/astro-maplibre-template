@@ -92,7 +92,7 @@ blocks:
       - h5:
         - str: ""
       - img:
-        - src: "../astro-maplibre-template/img/WI_Assembly_Districts_2002_2024.png"
+        - src: "../img/WI_Assembly_Districts_2002_2024.png"
           alt: "image description"
 
   - type: "content"
@@ -177,17 +177,17 @@ blocks:
       - h5:
         - str: ""
       - img:
-        - src: "../astro-maplibre-template/img/dane-2016.png"
+        - src: "../img/dane-2016.png"
           alt: "image description"
       - h5:
         - str: ""
       - img:
-        - src: "../astro-maplibre-template/img/dane-2020.png"
+        - src: "../img/dane-2020.png"
           alt: "image description"
       - h5:
         - str: ""
       - img:
-        - src: "../astro-maplibre-template/img/dane-2024.png"
+        - src: "../img/dane-2024.png"
           alt: "image description"
       - h5:
         - str: ""
@@ -205,7 +205,7 @@ blocks:
       - h5:
         - str: ""
       - img:
-        - src: "../astro-maplibre-template/img/dane-county-land-use.png"
+        - src: "../img/dane-county-land-use.png"
           alt: "image description"
   
   - type: "content"
@@ -217,7 +217,7 @@ blocks:
       - h5:
         - str: ""
       - img:
-        - src: "../astro-maplibre-template/img/city-of-madison-absentee-voting.png"
+        - src: "../img/city-of-madison-absentee-voting.png"
           alt: "image description"
   
   - type: "content"
