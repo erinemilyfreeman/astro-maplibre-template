@@ -19,8 +19,8 @@ blocks:
   - type: "map"
     content:
       container: "maplibremap"
-      latitude: 43.15
-      longitude: -89.5
+      latitude: 43.075
+      longitude: -89.4
       zoom: 7.5
       interactive: true
       mapstyle: "https://api.maptiler.com/maps/c4b7fc8b-0f59-4e21-a008-5e423bd97861/style.json?key=MRVkBdhGYsxXQhwo9Xq7"
@@ -105,6 +105,70 @@ blocks:
         - str: ""
       - p: 
         - str: "Given the results of the 2024 presidential election, this atlas looks at each ward in Dane County and the presidential election results in 2016, 2020, and 2024 (from left to right below).  Due to the recent timing of the 2024 presidential election, the election data is not entirely geocoordinated yet." 
+      - h5:
+        - str: ""
+  
+  - type: "map"
+    content:
+      container: "maplibremap2"
+      latitude: 43.075
+      longitude: -89.4
+      zoom: 9.5
+      interactive: true
+      mapstyle: "https://api.maptiler.com/maps/c4b7fc8b-0f59-4e21-a008-5e423bd97861/style.json?key=MRVkBdhGYsxXQhwo9Xq7"
+      containerstyle: "width: 100%; height: 65vh"
+      layers:
+        - id: "2024"
+          url: "./data/2024-Dane-Election.geojson"
+          data-type: "geojson"
+          layer-type: "fill"
+          paint:
+            fill-color: 
+              expression: 
+                case: 
+                  - ['has', '2024_Dane_ElectionResults_PREDEM24']
+                  - '#0000FF' 
+                  - ['has', '2024_Dane_ElectionResults_PREREP24']
+                  - '#FF0000'
+                  - '#cccccc'  
+            fill-opacity: 0.7 
+          toggle: true
+          visible: true
+        - id: "2020"
+          url: "./data/2020-Dane-Election.geojson"
+          data-type: "geojson"
+          layer-type: "fill"
+          paint:
+            fill-color: 
+              expression: 
+                case: 
+                  - ['has', 'PREDEM20']
+                  - '#0000FF' 
+                  - ['has', 'PREREP20']
+                  - '#FF0000'
+                  - '#cccccc'  
+            fill-opacity: 0.7 
+          toggle: true
+          visible: true
+        - id: "2016"
+          url: "./data/2016-Dane-Election.geojson"
+          data-type: "geojson"
+          layer-type: "fill"
+          paint:
+            fill-color: 
+              expression: 
+                case: 
+                  - ['has', 'PREDEM16']
+                  - '#0000FF' 
+                  - ['has', 'PREREP16']
+                  - '#FF0000'
+                  - '#cccccc'  
+            fill-opacity: 0.7 
+          toggle: true
+          visible: true
+
+  - type: "content"
+    content:
       - h5:
         - str: ""
       - img:
